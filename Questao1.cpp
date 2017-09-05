@@ -5,13 +5,16 @@
 int main()
 {	
 	Data datanascimento(25, 03, 1995);
-	
+	int x, y, z;
 	
 	cout << "Digite a sua data de nascimento > ";
-	cin >> datanascimento.dia >> "/" >> datanascimento.mes >> "/" >> datanascimento.ano; 
+	cin >> x >> "/" >> y >> "/" >> z; 
+
+	setDia(x);
+	setMes(y);
+	setAno(z);
 	
-	
-	cout << datanascimento.dia >> "/" >> datanascimento.mes >> "/" >> datanascimento.ano << endl;
+	cout << datanascimento.getDia() >> "/" >> datanascimento.getMes() >> "/" >> datanascimento.getAno() << endl;
 	
 	return 0;
 
